@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@builder.io/dev-tools": "^1.0.1",
+    "@builder.io/react": "^3.2.6",
+    "@builder.io/sdk": "^2.2.2",
     "@material-tailwind/react": "^2.1.9",
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-slot": "^1.0.2",

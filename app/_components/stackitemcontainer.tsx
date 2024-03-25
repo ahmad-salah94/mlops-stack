@@ -10,7 +10,7 @@ import {
     ml_pipeline,
     model_registry,
     model_serving,
-    metadata_store,
+    experimentTracking_metadataStore,
     model_monitoring
 } from "@/lib/data"
  
@@ -197,9 +197,9 @@ export const StackItemContainer = ({
                     ))}
                 </>
             )}
-            {StackHeading == "Metadata Store" && (
+            {StackHeading == "experiment Tracking" && (
                 <>
-                    {metadata_store.map((stack) => (
+                    {experimentTracking_metadataStore.map((stack) => (
                         <StackItem 
                             isSelected={isSelected}
                             setIsSelected={setIsSelected}

@@ -11,7 +11,7 @@ import {
     ml_pipeline,
     model_registry,
     model_serving,
-    metadata_store,
+    experimentTracking_metadataStore,
     model_monitoring
 } from "@/lib/data"
 
@@ -215,7 +215,7 @@ export const StackContainer = () => {
                                 stackType="stackStorage" 
                                 stackHeading="Model Registry" 
                                 data={model_registry}
-                                stackDescription="Description."
+                                stackDescription="A Model Registry is a centralized repository where machine learning models are stored, versioned, and managed throughout their lifecycle. It serves as a single source of truth for an organization's machine learning assets, allowing data scientists and engineers to collaboratively manage, track, and audit models. The registry typically supports version control, model metadata documentation, and stage transitions (e.g., from development to staging to production). This enables consistent deployment, monitoring, and governance of models, ensuring that only approved and vetted models are deployed in production environments."
                             />
                         </div>
                     </ArcherElement>
@@ -239,7 +239,7 @@ export const StackContainer = () => {
                                 stackType="stackBox" 
                                 stackHeading="Model Serving" 
                                 data={model_serving}
-                                stackDescription="Description."
+                                stackDescription="Model Serving refers to the process of deploying and making a machine learning model available for use in a production environment. This involves hosting the model in a way that it can receive input data, perform predictions or analyses, and return the results. Model serving can be implemented in various ways, including through RESTful APIs, batch processing, or streaming data pipelines. The choice of serving method depends on the requirements for latency, throughput, and scalability. Effective model serving ensures that models are accessible, reliable, and efficient, enabling real-time decision making and automation in applications."
                             />
                         </div>
                     </ArcherElement>
@@ -254,9 +254,9 @@ export const StackContainer = () => {
                         <div>
                             <Stack 
                                 stackType="stackStorage" 
-                                stackHeading="Metadata Store" 
-                                data={metadata_store}
-                                stackDescription="Description."
+                                stackHeading="experiment Tracking" 
+                                data={experimentTracking_metadataStore}
+                                stackDescription="Experiment tracking, often coupled with a metadata store, is a crucial component of the machine learning lifecycle. It involves recording and organizing data about each experiment run, including parameters, metrics, and outcomes. This systematic logging enables data scientists and ML engineers to compare different models, understand changes over time, and reproduce results. A metadata store, on the other hand, is a repository where this experiment-related data is kept. It contains details about the experiments, models, datasets, and their versions. Together, experiment tracking and metadata storage provide a structured framework for managing machine learning workflows, facilitating analysis and collaboration, and ensuring that ML projects are transparent, reproducible, and scalable."
                             />
                         </div>
                     </ArcherElement>

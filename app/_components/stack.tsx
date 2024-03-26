@@ -37,10 +37,10 @@ export const Stack = ({
                     {/* Stack Box */}
                     {stackType == "stackBox" && (
 
-                        <div className="flex flex-col w-[230px] border border-gray-600 rounded-md shadow-md hover:border-red-500 hover:shadow-red-500 active:shadow-red-500 cursor-pointer box-animation">
+                        <div className="flex flex-col w-[230px] border border-gray-600 rounded-md shadow-md hover:border-blue-500 hover:shadow-blue-500 active:shadow-blue-500 cursor-pointer box-animation">
 
                             {/* Stack Heading Section */}
-                            <div className="flex items-center justify-start px-2 py-2 text-gray-600 group-active:text-red-500 font-normal uppercase text-base text-ellipsis bg-red-100 rounded-t-md overflow-hidden border-b border-b-gray-600">{stackHeading}</div>
+                            <div className="flex items-center justify-start px-2 py-2 text-gray-600 group-active:text-blue-500 font-normal uppercase text-base text-ellipsis bg-blue-100 rounded-t-md overflow-hidden border-b border-b-gray-600">{stackHeading}</div>
 
                             {/* Stack Content Section */}
                             <div>
@@ -57,10 +57,10 @@ export const Stack = ({
                     
                     {stackType == "stackStorage" && (
 
-                        <div className="flex flex-col w-[230px] border border-gray-600 rounded-3xl shadow-md hover:border-blue-500 hover:shadow-blue-500 active:shadow-blue-500 cursor-pointer box-animation">
+                        <div className="flex flex-col w-[230px] border border-gray-600 rounded-3xl shadow-md hover:border-yellow-500 hover:shadow-yellow-500 active:shadow-yellow-500 cursor-pointer box-animation">
 
                             {/* Stack Heading Section */}
-                            <div className="flex items-center justify-start px-4 py-2 text-gray-600 group-active:text-blue-500 font-normal uppercase text-base text-ellipsis bg-blue-100 -z-10 rounded-t-3xl overflow-hidden border-b border-b-gray-600">{stackHeading}</div>
+                            <div className="flex items-center justify-start px-4 py-2 text-gray-600 group-active:text-yellow-500 font-normal uppercase text-base text-ellipsis bg-yellow-100 -z-10 rounded-t-3xl overflow-hidden border-b border-b-gray-600">{stackHeading}</div>
 
                             {/* Stack Content Section */}
                             <div>

@@ -50,7 +50,7 @@ export const StackContainer = () => {
                                 stackType="stackBox" 
                                 stackHeading="Data Analysis" 
                                 data={data_analysis}
-                                stackDescription="Data Analysis is the process of inspecting, cleansing, transforming, and modeling data to discover useful information, inform conclusions, and support decision-making. This involves using statistical, computational, and analytical techniques to identify patterns, trends, and relationships within data. Data analysis is critical across various domains, including business, science, engineering, and social sciences, enabling stakeholders to make data-driven decisions. The process can range from simple descriptive statistics to complex machine learning or data mining techniques. Effective data analysis helps organizations understand their environment, evaluate performance, and predict future trends, thereby facilitating strategic planning and operational efficiency."
+                                stackDescription="Description."
                             />
                         </div>
                     </ArcherElement>
@@ -74,7 +74,7 @@ export const StackContainer = () => {
                                 stackType="stackBox" 
                                 stackHeading="Experimentation" 
                                 data={experimentation}
-                                stackDescription="Experimentation involves designing experiments, collecting data, analyzing results, and drawing conclusions to advance knowledge or solve specific problems. In business and product development, experimentation can refer to A/B testing or multivariate testing, where different versions of a product are presented to users to determine which one performs better based on defined metrics. Effective experimentation allows for data-driven decision-making, innovation, and continuous improvement in various fields, from scientific research to marketing strategies."
+                                stackDescription="Description."
                             />
                         </div>
                     </ArcherElement>
@@ -124,7 +124,7 @@ export const StackContainer = () => {
                                 stackType="stackStorage" 
                                 stackHeading="Feature Store"
                                 data={feature_store}
-                                stackDescription="A Feature Store is a centralized repository designed to store, manage, and serve features for machine learning models. It acts as a bridge between data engineering and machine learning teams, ensuring that features used for training models are consistent with those used in production environments. This system enables the reuse of features across different models, improves collaboration, and accelerates the development of machine learning projects. By maintaining a catalog of feature definitions and metadata, the feature store ensures data consistency, versioning, and governance. Additionally, it supports real-time and batch data processing, facilitating efficient feature engineering and serving for a variety of machine learning applications." 
+                                stackDescription="Description." 
                             />
                         </div>
                     </ArcherElement>
@@ -148,7 +148,7 @@ export const StackContainer = () => {
                                 stackType="stackStorage" 
                                 stackHeading="Code Repository" 
                                 data={code_repository}
-                                stackDescription="A Code Repository is a central location where developers store, manage, and track their source code. It is an essential tool for version control, allowing multiple developers to work on the same project without conflicts. Code repositories support the tracking of changes, collaboration, and the maintenance of different versions of code, making it easier to revert to previous states if needed. They facilitate continuous integration and delivery by enabling automated builds and tests. Commonly used in software development and engineering practices, code repositories play a crucial role in project management, code review, and deployment processes."
+                                stackDescription="Description."
                             />
                         </div>
                     </ArcherElement>
@@ -191,7 +191,7 @@ export const StackContainer = () => {
                                 stackType="stackBox" 
                                 stackHeading="ML pipeline" 
                                 data={ml_pipeline}
-                                stackDescription="An ML pipeline is a sequence of steps designed to automate the process of data preparation, model training, evaluation, and deployment in machine learning projects. Each step in the pipeline corresponds to a particular phase of the machine learning lifecycle, including data collection, preprocessing, feature extraction, model fitting, and prediction serving. Pipelines ensure that the workflow is reproducible, scalable, and maintainable. They enable data scientists and engineers to streamline model development and deployment, reduce manual errors, and facilitate continuous integration and delivery of machine learning models. Additionally, ML pipelines support version control and collaboration, allowing teams to efficiently manage and update models as data and requirements change."
+                                stackDescription="Description."
                             />
                         </div>
                     </ArcherElement>
@@ -282,7 +282,7 @@ export const StackContainer = () => {
                                 stackType="stackBox" 
                                 stackHeading="Model Monitoring" 
                                 data={model_monitoring}
-                                stackDescription="Model monitoring refers to the continuous oversight of machine learning models in production to ensure they perform as expected over time. This involves tracking various metrics such as model accuracy, prediction drift, and response times, as well as monitoring the quality of input data to detect anomalies or shifts in data distribution. Effective model monitoring helps identify performance degradation, data drift, or operational issues, enabling timely interventions such as model retraining, updating, or rollback. This process is critical for maintaining the reliability and effectiveness of machine learning models in real-world applications, ensuring they continue to deliver value and make accurate predictions as conditions change."
+                                stackDescription="Description."
                             />
                         </div>
                     </ArcherElement>

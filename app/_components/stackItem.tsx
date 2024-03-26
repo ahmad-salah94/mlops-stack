@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/dialog"
 
 import { Button } from "@/components/ui/button"
-import { AlertTriangle, Cross, FileWarning, Plus, ThumbsUp, WarehouseIcon, X } from "lucide-react"
+import { Cross, FileWarning, Plus, WarehouseIcon, X, Trash, Laugh, Frown } from "lucide-react"
 
 type StackItemProps = {
     isSelected: boolean
@@ -98,7 +98,7 @@ export const StackItem = ({
                     </div>
                 </DialogTrigger>
                 {stackSelected && (
-                    <X  
+                    <Trash  
                     onClick={() => handleClickFalse()}
                     size={16} 
                     className=" text-gray-400 hover:text-gray-700" 
@@ -122,7 +122,7 @@ export const StackItem = ({
                                 onClick={() => handleClickTrue()}
                                 variant="default" 
                                 size="sm"
-                                className="flex items-center justify-between text-sm gap-2 bg-black text-white"
+                                className="flex items-center justify-between text-sm gap-2 bg-green-600 text-white"
                                 >
                                 <Plus size={18} />
                                 Add to stack
@@ -134,7 +134,7 @@ export const StackItem = ({
                                 size="sm"
                                 className="flex items-center justify-between text-sm gap-2 bg-red-500 text-white"
                                 >
-                                <X size={18} />
+                                <Trash size={18} />
                                 Remove
                             </Button>
                         </div>
@@ -154,8 +154,8 @@ export const StackItem = ({
                     <p className="text-sm text-gray-700">{description}</p>
 
                     <div className="flex items-center justify-start gap-1 pt-4">
-                        <ThumbsUp color="green" size={12} />
-                        <p className="font-bold text-base text-gray-700">Use it when</p>
+                        <Laugh color="green" size={12} />
+                        <p className="font-bold text-base text-gray-700">Advantages</p>
                     </div>
 
                     <ul className="text-sm text-gray-700 pl-4 pt-4 space-y-2">
@@ -166,8 +166,8 @@ export const StackItem = ({
                     </ul>
 
                     <div className="flex items-center justify-start gap-1 pt-4">
-                        <AlertTriangle color="red" size={14} />
-                        <p className="font-bold text-base text-gray-700">Watch out</p>
+                        <Frown color="red" size={14} />
+                        <p className="font-bold text-base text-gray-700">Disadvantages</p>
                     </div>
 
                     <ul className="text-sm text-gray-700 pl-4 pt-4 space-y-2">

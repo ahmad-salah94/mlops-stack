@@ -1,0 +1,18 @@
+version: '3'
+services:
+  minio:
+    image: minio/minio
+    ports:
+      - 9000:9000
+    environment:
+      - MINIO_ACCESS_KEY=your-access-key
+      - MINIO_SECRET_KEY=your-secret-key
+    volumes:
+      - ./data:/data
+    command: server /data
+
+  create_bucket:
+    image: minio/mc
+    depends_on:
+      - minio
+    entrypoint: sh -c "sleep 10 && mc config host add minio http://minio:9000 your-access-key your-secret-key && mc mb minio/your-bucket-name"

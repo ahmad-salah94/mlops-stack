@@ -1,4 +1,4 @@
-import { FileStack, Home, Package, Component, Notebook, Wrench, Percent, Castle } from "lucide-react"
+import { FileStack, Home, Package, Component, Notebook, Wrench, Percent, Castle, Video } from "lucide-react"
 import Link from "next/link"
 
 export const Sidebar = () => {
@@ -37,6 +37,10 @@ export const Sidebar = () => {
                     <Link href="/Reference-Architecture" className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-300">
                         <Castle />
                         <span className="ml-2 text-sm font-medium">MLOps Reference-Architecture</span>
+                    </Link>
+                    <Link href="/videos" className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-300">
+                        <Video />
+                        <span className="ml-2 text-sm font-medium">Videos about MLOps</span>
                     </Link>
                 </div>
             </div>

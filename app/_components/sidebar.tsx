@@ -2,33 +2,36 @@
 
 import { FileStack, Home, Package, Component, Notebook, Wrench, Percent, Castle, Video, Menu, X } from "lucide-react"
 import Link from "next/link"
-import { useState, FC } from "react"
+import { useState } from "react"
+import { LucideIcon } from "lucide-react"  // Import LucideIcon type for proper typing
 
+// Define the props interface for SidebarLink component
 interface SidebarLinkProps {
-  href: string;
-  icon: FC<{ className: string }>;
-  children: React.ReactNode;
+    href: string;  // The URL the link should navigate to
+    icon: LucideIcon;  // The Lucide icon component to be rendered
+    children: React.ReactNode;  // The content to be rendered inside the link
 }
-
-const SidebarLink: FC<SidebarLinkProps> = ({ href, icon: Icon, children }) => {
-  const handleClick = () => {
-    setIsOpen(false);
-  };
-
-  return (
-    <Link 
-      href={href} 
-      className="flex items-center w-full h-14 md:h-12 px-3 mt-2 rounded hover:bg-gray-300"
-      onClick={handleClick}
-    >
-      <Icon className="w-6 h-6 md:w-5 md:h-5" />
-      <span className="ml-2 text-base md:text-sm font-medium">{children}</span>
-    </Link>
-  );
-};
 
 export const Sidebar = () => {
     const [isOpen, setIsOpen] = useState(false)
+
+    // SidebarLink is now properly typed with the interface
+    const SidebarLink: React.FC<SidebarLinkProps> = ({ href, icon: Icon, children }) => {
+        const handleClick = () => {
+            setIsOpen(false);
+        };
+
+        return (
+            <Link 
+                href={href} 
+                className="flex items-center w-full h-14 md:h-12 px-3 mt-2 rounded hover:bg-gray-300"
+                onClick={handleClick}
+            >
+                <Icon className="w-6 h-6 md:w-5 md:h-5" />
+                <span className="ml-2 text-base md:text-sm font-medium">{children}</span>
+            </Link>
+        );
+    };
 
     return (
         <>
@@ -56,7 +59,6 @@ export const Sidebar = () => {
 
                 <div className="w-full px-2">
                     <div className="flex flex-col items-center w-full mt-3 border-t border-gray-300">
-                        {/* Your existing links */}
                         <SidebarLink href="/home" icon={Home}>Home</SidebarLink>
                         <SidebarLink href="/stackpage" icon={FileStack}>Stack Builder</SidebarLink>
                         <SidebarLink href="/component" icon={Component}>MLOps technical components</SidebarLink>

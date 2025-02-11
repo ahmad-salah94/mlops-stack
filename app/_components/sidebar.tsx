@@ -2,27 +2,33 @@
 
 import { FileStack, Home, Package, Component, Notebook, Wrench, Percent, Castle, Video, Menu, X } from "lucide-react"
 import Link from "next/link"
-import { useState } from "react"
+import { useState, FC } from "react"
+
+interface SidebarLinkProps {
+  href: string;
+  icon: FC<{ className: string }>;
+  children: React.ReactNode;
+}
+
+const SidebarLink: FC<SidebarLinkProps> = ({ href, icon: Icon, children }) => {
+  const handleClick = () => {
+    setIsOpen(false);
+  };
+
+  return (
+    <Link 
+      href={href} 
+      className="flex items-center w-full h-14 md:h-12 px-3 mt-2 rounded hover:bg-gray-300"
+      onClick={handleClick}
+    >
+      <Icon className="w-6 h-6 md:w-5 md:h-5" />
+      <span className="ml-2 text-base md:text-sm font-medium">{children}</span>
+    </Link>
+  );
+};
 
 export const Sidebar = () => {
     const [isOpen, setIsOpen] = useState(false)
-
-    const SidebarLink = ({ href, icon: Icon, children }) => {
-        const handleClick = () => {
-            setIsOpen(false);
-        };
-
-        return (
-            <Link 
-                href={href} 
-                className="flex items-center w-full h-14 md:h-12 px-3 mt-2 rounded hover:bg-gray-300"
-                onClick={handleClick}
-            >
-                <Icon className="w-6 h-6 md:w-5 md:h-5" />
-                <span className="ml-2 text-base md:text-sm font-medium">{children}</span>
-            </Link>
-        );
-    };
 
     return (
         <>

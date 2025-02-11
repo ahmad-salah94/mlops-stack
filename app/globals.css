@@ -27,7 +27,27 @@ body {
   }
 }
 
- 
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  
+  /* Make touch targets larger on mobile */
+  @media (max-width: 768px) {
+    button, 
+    [role="button"],
+    .clickable {
+      @apply min-h-[44px] min-w-[44px];
+    }
+  }
+}
+
+@layer utilities {
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .hide-scrollbar::-webkit-scrollbar {
   display: none;

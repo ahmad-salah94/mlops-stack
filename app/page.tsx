@@ -8,13 +8,13 @@ export default function Home() {
       <div className="min-h-screen bg-gray-50 flex flex-col justify-center items-center">
 
   
-        <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-          <section className="mb-8 space-x-4">
-            <img src="/path/to/hs_logo.png" alt="Hochschule Reutlingen" className="mb-4 max-h-20 hover:scale-105 transition-transform duration-300 ease-in-out shadow-lg"/>
-            <img src="/path/to/firma_logo.jpeg" alt="SPRINTEINS" className="max-h-20 hover:scale-105 transition-transform duration-300 ease-in-out shadow-lg"/>
+        <main className="flex flex-col items-center justify-center w-full flex-1 px-4 md:px-20 text-center">
+          <section className="mb-8 space-y-4 md:space-x-4 md:space-y-0 flex flex-col md:flex-row items-center">
+            <img src="/path/to/hs_logo.png" alt="Hochschule Reutlingen" className="w-40 md:max-h-20 mb-4 md:mb-0 hover:scale-105 transition-transform duration-300 ease-in-out shadow-lg"/>
+            <img src="/path/to/firma_logo.jpeg" alt="SPRINTEINS" className="w-40 md:max-h-20 hover:scale-105 transition-transform duration-300 ease-in-out shadow-lg"/>
           </section>
   
-          <h1 className="text-2xl font-bold mb-6 text-gray-800">
+          <h1 className="text-xl md:text-2xl font-bold mb-6 text-gray-800">
             Integration of Machine Learning Models into Production Environments
           </h1>
   

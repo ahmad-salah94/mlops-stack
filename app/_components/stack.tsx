@@ -37,10 +37,10 @@ export const Stack = ({
                     {/* Stack Box */}
                     {stackType == "stackBox" && (
 
-                        <div className="flex flex-col w-[230px] border border-gray-600 rounded-md shadow-md hover:border-blue-500 hover:shadow-blue-500 active:shadow-blue-500 cursor-pointer box-animation">
+                        <div className="flex flex-col w-full md:w-[230px] border border-gray-600 rounded-md shadow-md hover:border-blue-500 hover:shadow-blue-500 active:shadow-blue-500 cursor-pointer box-animation">
 
                             {/* Stack Heading Section */}
-                            <div className="flex items-center justify-start px-2 py-2 text-gray-600 group-active:text-blue-500 font-normal uppercase text-base text-ellipsis bg-blue-100 rounded-t-md overflow-hidden border-b border-b-gray-600">{stackHeading}</div>
+                            <div className="flex items-center justify-start px-2 py-3 md:py-2 text-gray-600 group-active:text-blue-500 font-normal uppercase text-base text-ellipsis bg-blue-100 rounded-t-md overflow-hidden border-b border-b-gray-600">{stackHeading}</div>
 
                             {/* Stack Content Section */}
                             <div>
@@ -77,7 +77,7 @@ export const Stack = ({
                 </div>
 
             </DialogTrigger>
-            <DialogContent className="bg-gray-200 w-[900px]">
+            <DialogContent className="bg-gray-200 w-[95vw] md:w-[900px] max-h-[90vh] overflow-y-auto">
                 <DialogTitle>
                     <h1 className="flex items-center justify-start text-2xl font-bold">{stackHeading}</h1>
                 </DialogTitle>

@@ -25,11 +25,11 @@ export default function RootLayout({
             <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" />
             </head>
             <body className={cn(inter.className,
-                "flex h-full gap-x-20")}>
+                "flex flex-col md:flex-row h-full gap-x-20")}>
                 <Suspense fallback={<div>Loading...</div>}>
                     <Sidebar />
                 </Suspense>
-                <main className="relative overflow-hidden">
+                <main className="relative overflow-x-hidden w-full px-4 md:px-0">
                     {children}
                 </main>
             </body>
